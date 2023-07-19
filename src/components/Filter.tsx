@@ -9,10 +9,10 @@ export default function Filter() {
 
   const handleClick = (id: number,name:string) => {
     // console.log(name);
+    window.scrollTo(0,0)
     setIndex(id);
-    console.log(rentalCategory);
     changeRentalCategory(name);
-    console.log(rentalCategory);
+    
     
   };
   const containerRef = useRef<HTMLDivElement>(null);

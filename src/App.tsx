@@ -1,6 +1,6 @@
 import { Map } from '@mui/icons-material';
 import './App.css';
-import Footer from './components/Footer';
+import Footer from './components/FooterLg';
 import Header from './components/Header';
 import Main from './components/Main';
 
