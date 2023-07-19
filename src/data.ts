@@ -7,11 +7,11 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with  - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 500,
+    location: "Russia",
+    price: 917,
   },
   {
     img: [
@@ -21,11 +21,11 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-635437605163910390/original/0db5cffd-7f0d-4e13-bd59-39cb9861cdaa.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-635437605163910390/original/5a6ee29b-2c64-440a-aee6-481d4d8d1bd5.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with  - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 400,
+    location: "São Tomé and Príncipe",
+    price: 734,
   },
   {
     img: [
@@ -35,11 +35,11 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-31508919/original/15a204ce-3888-48fb-b8a4-ecedbb29587f.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-31508919/original/83a1746c-d67e-415b-857d-86d11dfe72aa.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with  - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Argentina",
+    price: 924,
   },
   {
     img: [
@@ -52,8 +52,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "St. Martin",
+    price: 135,
   },
   {
     img: [
@@ -66,8 +66,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Estonia",
+    price: 823,
   },
   {
     img: [
@@ -80,8 +80,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Åland Islands",
+    price: 633,
   },
   {
     img: [
@@ -94,8 +94,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Iraq",
+    price: 891,
   },
   {
     img: [
@@ -108,8 +108,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Somalia",
+    price: 718,
   },
   {
     img: [
@@ -122,8 +122,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "United States",
+    price: 325,
   },
   {
     img: [
@@ -136,8 +136,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 400,
+    location: "Martinique",
+    price: 825,
   },
   {
     img: [
@@ -150,8 +150,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "St. Vincent & Grenadines",
+    price: 549,
   },
   {
     img: [
@@ -164,8 +164,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Cape Verde",
+    price: 741,
   },
   {
     img: [
@@ -178,8 +178,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Lithuania",
+    price: 149,
   },
   {
     img: [
@@ -192,8 +192,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "India",
+    price: 71,
   },
   {
     img: [
@@ -206,8 +206,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Taiwan",
+    price: 71,
   },
   {
     img: [
@@ -220,8 +220,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Dominica",
+    price: 908,
   },
   {
     img: [
@@ -234,8 +234,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 500,
+    location: "Anguilla",
+    price: 191,
   },
   {
     img: [
@@ -248,8 +248,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 400,
+    location: "Iceland",
+    price: 649,
   },
   {
     img: [
@@ -262,8 +262,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Morocco",
+    price: 840,
   },
   {
     img: [
@@ -276,8 +276,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Mayotte",
+    price: 683,
   },
   {
     img: [
@@ -290,8 +290,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "China",
+    price: 947,
   },
   {
     img: [
@@ -304,8 +304,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Yemen",
+    price: 810,
   },
   {
     img: [
@@ -318,8 +318,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Singapore",
+    price: 624,
   },
   {
     img: [
@@ -332,8 +332,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Guatemala",
+    price: 828,
   },
   {
     img: [
@@ -346,8 +346,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Ascension Island",
+    price: 578,
   },
   {
     img: [
@@ -360,8 +360,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 400,
+    location: "Brunei",
+    price: 473,
   },
   {
     img: [
@@ -374,8 +374,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Cameroon",
+    price: 967,
   },
   {
     img: [
@@ -388,8 +388,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Kosovo",
+    price: 836,
   },
   {
     img: [
@@ -402,8 +402,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Venezuela",
+    price: 297,
   },
   {
     img: [
@@ -416,8 +416,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Ukraine",
+    price: 989,
   },
   {
     img: [
@@ -430,8 +430,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Cambodia",
+    price: 41,
   },
   {
     img: [
@@ -444,8 +444,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Ascension Island",
+    price: 433,
   },
   {
     img: [
@@ -458,8 +458,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 500,
+    location: "Cameroon",
+    price: 723,
   },
   {
     img: [
@@ -472,8 +472,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 400,
+    location: "São Tomé and Príncipe",
+    price: 273,
   },
   {
     img: [
@@ -486,8 +486,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "rooms",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Bangladesh",
+    price: 547,
   },
   {
     img: [
@@ -500,8 +500,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Taiwan",
+    price: 360,
   },
   {
     img: [
@@ -514,8 +514,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Tajikistan",
+    price: 119,
   },
   {
     img: [
@@ -528,8 +528,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Luxembourg",
+    price: 31,
   },
   {
     img: [
@@ -542,8 +542,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Norfolk Island",
+    price: 671,
   },
   {
     img: [
@@ -556,8 +556,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "amazing pools",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Guinea",
+    price: 632,
   },
   {
     img: [
@@ -570,8 +570,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "British Virgin Islands",
+    price: 384,
   },
   {
     img: [
@@ -584,8 +584,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 400,
+    location: "Denmark",
+    price: 672,
   },
   {
     img: [
@@ -598,8 +598,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "New Zealand",
+    price: 830,
   },
   {
     img: [
@@ -612,8 +612,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "play",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Turkey",
+    price: 363,
   },
   {
     img: [
@@ -626,8 +626,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Belarus",
+    price: 229,
   },
   {
     img: [
@@ -640,8 +640,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "French Polynesia",
+    price: 977,
   },
   {
     img: [
@@ -654,8 +654,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 300,
+    location: "Northern Mariana Islands",
+    price: 78,
   },
   {
     img: [
@@ -668,8 +668,8 @@ export const rentals = [
     desc: "Stay with Riley - Artist",
     date: "Jul 19 -24",
     category: "trending",
-    location: "Mexico city, Mexico",
-    price: 100,
+    location: "Norfolk Island",
+    price: 511,
   },
 ];
 

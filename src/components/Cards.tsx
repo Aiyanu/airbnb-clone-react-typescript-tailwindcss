@@ -20,7 +20,7 @@ export default function Cards() {
 
 
   return (
-    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-4 place-items-center gap-8 px-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-4 px-8">
       {newRentals.map((rental, index) => {
         const { img, location, price, date, desc, category } = rental;
           return (

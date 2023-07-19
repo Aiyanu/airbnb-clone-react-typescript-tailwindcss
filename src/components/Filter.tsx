@@ -104,7 +104,7 @@ export default function Filter() {
       >
         <ChevronRight fontSize="small" />
       </div>
-      <div className="border p-4 flex rounded-2xl max-md:hidden">
+      <div className="border p-4 flex rounded-2xl max-md:hidden cursor-pointer">
         <Tune />
         <span className="capitalize">filters</span>
       </div>

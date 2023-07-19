@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Menu,AccountCircle,Language } from "@mui/icons-material";
+import { Menu,Language, AccountCircleOutlined } from "@mui/icons-material";
 import SearchBar from "./SearchBar";
 
 export default function TopbarLg() {
@@ -27,7 +27,7 @@ export default function TopbarLg() {
           onClick={() => setIsOpen(!isOpen)}
         >
           <Menu fontSize="small" />
-          <AccountCircle color="disabled" />
+          <AccountCircleOutlined color="disabled" />
           <div
             className={`absolute z-20 -bottom-52 right-4 flex flex-col bg-white shadow-xl rounded-lg w-60 gap-4  p-4 ${
               isOpen ? "" : "hidden"

@@ -8,7 +8,7 @@ import { IOSSwitch } from "./Switch";
 
 export default function Main() {
   return (
-    <div className="flex-grow">
+    <div className="flex-grow pb-8">
       <Cards />
     </div>
   );
