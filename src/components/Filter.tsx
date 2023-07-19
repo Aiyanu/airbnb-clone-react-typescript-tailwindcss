@@ -46,7 +46,7 @@ export default function Filter() {
       <div
         className={`mr-2 ${
           scrollLeft === 0 ? "hidden" : "block"
-        } p-1 rounded-full border grid place-items-center cursor-pointer`}
+        } max-md:hidden p-1 rounded-full border grid place-items-center cursor-pointer`}
         onClick={handleScrollLeft}
       >
         <ChevronLeft fontSize="small" />
@@ -66,7 +66,7 @@ export default function Filter() {
               key={id}
               className="relative cursor-pointer group w-18 pb-2"
               onClick={() => {
-                handleClick(id,name)
+                handleClick(id, name);
               }}
             >
               <div className="flex flex-col gap-4 justify-center items-center">
@@ -99,12 +99,12 @@ export default function Filter() {
             containerRef.current.scrollWidth - containerRef.current.offsetWidth
             ? "hidden"
             : "block"
-        } full border grid place-items-center cursor-pointer`}
+        } max-md:hidden full border grid place-items-center cursor-pointer`}
         onClick={handleScrollRight}
       >
         <ChevronRight fontSize="small" />
       </div>
-      <div className="border p-4 flex rounded-2xl">
+      <div className="border p-4 flex rounded-2xl max-md:hidden">
         <Tune />
         <span className="capitalize">filters</span>
       </div>
