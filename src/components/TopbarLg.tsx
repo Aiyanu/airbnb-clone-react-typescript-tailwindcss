@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 export default function TopbarLg() {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <nav className="lg:grid grid-cols-3 place-content-between w-full justify-start items-center place-items-center hidden border-b">
+    <nav className="lg:grid grid-cols-3 place-content-between w-full justify-start items-center place-items-center hidden border-b pt-2">
       <div className="flex items-center justify-center gap-2 cursor-pointer place-self-start my-auto ml-6 p-6">
         <img src="/assets/airbnbLogo.png" alt="logo" className="w-7" />
         <p className="font-extrabold text-2xl text-[#ff385c] hidden lg:block" style={{"fontFamily":"Questrial"}}>

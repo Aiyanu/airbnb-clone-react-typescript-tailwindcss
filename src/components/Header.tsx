@@ -5,7 +5,7 @@ import TopBarSm from "./TopBarSm";
 
 export default function Header() {
     return (
-      <div className="sticky top-0 z-10 bg-white">
+      <div className="fixed left-0 right-0 top-0 z-20 bg-white">
         <TopbarLg />
         <TopBarSm />
         <Filter />

@@ -5,9 +5,9 @@ import {
   ChevronLeft,
   ChevronRight,
   Favorite,
-  FavoriteBorderOutlined,
   FavoriteOutlined,
 } from "@mui/icons-material";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Cards() {
   const [scrollPositions, setScrollPositions] = useState<number[]>([]);
@@ -35,9 +35,9 @@ export default function Cards() {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center gap-4 px-8">
+    <div className="grid grid-cols-auto-fit place-items-center overscroll-contain">
       {newRentals.map((rental, index) => {
-        const { img, location, price, date, desc, category } = rental;
+        const { img, location, price, date, desc } = rental;
         const isLiked = liked[index] || false;
         return (
           <div className="flex flex-col group cursor-pointer" key={index}>
@@ -48,7 +48,7 @@ export default function Cards() {
               >
                 {img.map((img, i) => (
                   <img
-                    className="snap-center rounded-2xl w-72 h-72 aspect-square"
+                    className="snap-center rounded-2xl aspect-square object-cover"
                     src={img}
                     alt=""
                     key={i}
@@ -56,7 +56,7 @@ export default function Cards() {
                 ))}
               </div>
               <div
-                className="absolute right-4 -top-[24rem]"
+                className="absolute right-4 top-4 "
                 onClick={() => toggleLiked(index)}
               >
                 {!isLiked ? (

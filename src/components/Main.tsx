@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import Cards from "./Cards";
 import { Map } from "@mui/icons-material";
 import { RentalContext } from "../context";
+import TestCards from "./TestCards";
 // import FormGroup from "@mui/material/FormGroup";
 // import FormControlLabel from "@mui/material/FormControlLabel";
 // import Stack from "@mui/material/Stack";
@@ -10,8 +11,9 @@ import { RentalContext } from "../context";
 
 export default function Main() {
   return (
-    <div className="flex-grow pb-10 relative">
+    <div className="flex-grow pb-16 relative pt-48">
       <Cards />
+      {/* <TestCards/> */}
       <div
         className={`cursor-pointer flex justify-center fixed bottom-20 z-10 left-0 right-0 `}
       >
