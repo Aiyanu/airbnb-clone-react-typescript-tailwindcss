@@ -1,10 +1,14 @@
 import React from "react";
-import Navbar from "./TopbarLg";
+import TopbarLg  from "./TopbarLg";
 import Filter from "./Filter";
+import TopBarSm from "./TopBarSm";
 
 export default function Header() {
-    return <div className="sticky top-0 z-10 bg-white">
-      <Navbar />
-        <Filter/>
-  </div>;
+    return (
+      <div className="sticky top-0 z-10 bg-white">
+        <TopbarLg />
+        <TopBarSm />
+        <Filter />
+      </div>
+    );
 }

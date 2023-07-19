@@ -42,7 +42,7 @@ export default function Filter() {
   };
 
   return (
-    <div className="flex gap-4 justify-center items-center px-4 py-2 border-t">
+    <div className="flex gap-4 justify-center items-center px-4 pt-2">
       <div
         className={`mr-2 ${
           scrollLeft === 0 ? "hidden" : "block"
@@ -76,11 +76,11 @@ export default function Filter() {
                   alt=""
                 />
                 <span
-                  className={`text-center flex flex-nowrap text-xs min-w-full capitalize ${
+                  className={`text-center flex flex-nowrap text-xs w-full capitalize flex-shrink ${
                     isActive ? "" : "text-gray-500"
                   }`}
                 >
-                  <p>{name}</p>
+                  <p className="text-center">{name}</p>
                 </span>
               </div>
               <div
