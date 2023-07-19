@@ -7,7 +7,7 @@ import {
   Favorite,
   FavoriteOutlined,
 } from "@mui/icons-material";
-import { Swiper, SwiperSlide } from "swiper/react";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Cards() {
   const [scrollPositions, setScrollPositions] = useState<number[]>([]);
