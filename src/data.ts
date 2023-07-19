@@ -6,12 +6,20 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/2332cde9-89bb-46d5-b803-a1f91e7e12d9.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
+      "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
     ],
-    desc: "Stay with  - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Robert Gardner",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/82130759-fbba-4012-ac60-51d5b0e4801e.jpg?im_w=240",
+    },
     location: "Russia",
     price: 917,
+    ratings: 4.2,
   },
   {
     img: [
@@ -21,11 +29,17 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-635437605163910390/original/0db5cffd-7f0d-4e13-bd59-39cb9861cdaa.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-635437605163910390/original/5a6ee29b-2c64-440a-aee6-481d4d8d1bd5.jpeg?im_w=720",
     ],
-    desc: "Stay with  - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Georgie Peterson",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/a910392f-02d4-4ed0-96a9-52d6ee997cc1.jpg?im_w=240",
+    },
     location: "São Tomé and Príncipe",
     price: 734,
+    ratings: 2.7,
   },
   {
     img: [
@@ -35,11 +49,17 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-31508919/original/15a204ce-3888-48fb-b8a4-ecedbb29587f.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-31508919/original/83a1746c-d67e-415b-857d-86d11dfe72aa.jpeg?im_w=720",
     ],
-    desc: "Stay with  - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Hattie Mason",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?im_w=240",
+    },
     location: "Argentina",
     price: 924,
+    ratings: 1.4,
   },
   {
     img: [
@@ -49,11 +69,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "St. Martin",
     price: 135,
+    ratings: 3.6,
   },
   {
     img: [
@@ -63,11 +84,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Estonia",
     price: 823,
+    ratings: 2.5,
   },
   {
     img: [
@@ -77,11 +99,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Åland Islands",
     price: 633,
+    ratings: 4.0,
   },
   {
     img: [
@@ -91,11 +114,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Iraq",
     price: 891,
+    ratings: 4.1,
   },
   {
     img: [
@@ -105,11 +129,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Somalia",
     price: 718,
+    ratings: 3.0,
   },
   {
     img: [
@@ -119,11 +144,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "United States",
     price: 325,
+    ratings: 3.6,
   },
   {
     img: [
@@ -133,11 +159,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card13.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "Martinique",
     price: 825,
+    ratings: 3.7,
   },
   {
     img: [
@@ -147,11 +174,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "St. Vincent & Grenadines",
     price: 549,
+    ratings: 2.0,
   },
   {
     img: [
@@ -161,11 +189,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "Cape Verde",
     price: 741,
+    ratings: 2.9,
   },
   {
     img: [
@@ -175,11 +204,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Lithuania",
     price: 149,
+    ratings: 4.8,
   },
   {
     img: [
@@ -189,11 +219,13 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "India",
     price: 71,
+
+    ratings: 2.3,
   },
   {
     img: [
@@ -203,11 +235,13 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Taiwan",
     price: 71,
+
+    ratings: 3.8,
   },
   {
     img: [
@@ -217,11 +251,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Dominica",
     price: 908,
+    ratings: 4.6,
   },
   {
     img: [
@@ -231,11 +266,17 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Lawrence Ramos",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/User-487970628/original/d0de75e6-3771-46b4-a473-50f6cc4c1818.jpeg?im_w=240",
+    },
     location: "Anguilla",
     price: 191,
+    ratings: 3.5,
   },
   {
     img: [
@@ -245,11 +286,17 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-635437605163910390/original/0db5cffd-7f0d-4e13-bd59-39cb9861cdaa.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-635437605163910390/original/5a6ee29b-2c64-440a-aee6-481d4d8d1bd5.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Nellie Maxwell",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?im_w=240",
+    },
     location: "Iceland",
     price: 649,
+    ratings: 3.7,
   },
   {
     img: [
@@ -259,11 +306,17 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-31508919/original/15a204ce-3888-48fb-b8a4-ecedbb29587f.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-31508919/original/83a1746c-d67e-415b-857d-86d11dfe72aa.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Manuel Chambers",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/a910392f-02d4-4ed0-96a9-52d6ee997cc1.jpg?im_w=240",
+    },
     location: "Morocco",
     price: 840,
+    ratings: 1.0,
   },
   {
     img: [
@@ -273,11 +326,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Mayotte",
     price: 683,
+    ratings: 4.4,
   },
   {
     img: [
@@ -287,11 +341,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "China",
     price: 947,
+    ratings: 4.0,
   },
   {
     img: [
@@ -301,11 +356,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Yemen",
     price: 810,
+    ratings: 4.7,
   },
   {
     img: [
@@ -315,11 +371,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Singapore",
     price: 624,
+    ratings: 1.0,
   },
   {
     img: [
@@ -329,11 +386,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Guatemala",
     price: 828,
+    ratings: 1.6,
   },
   {
     img: [
@@ -343,11 +401,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "Ascension Island",
     price: 578,
+    ratings: 1.0,
   },
   {
     img: [
@@ -357,11 +416,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card13.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "Brunei",
     price: 473,
+    ratings: 1.4,
   },
   {
     img: [
@@ -371,11 +431,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "Cameroon",
     price: 967,
+    ratings: 4.9,
   },
   {
     img: [
@@ -385,11 +446,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "Kosovo",
     price: 836,
+    ratings: 4.2,
   },
   {
     img: [
@@ -399,11 +461,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Venezuela",
     price: 297,
+    ratings: 4.0,
   },
   {
     img: [
@@ -413,11 +476,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Ukraine",
     price: 989,
+    ratings: 1.0,
   },
   {
     img: [
@@ -427,11 +491,13 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Cambodia",
     price: 41,
+
+    ratings: 1.6,
   },
   {
     img: [
@@ -441,11 +507,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Ascension Island",
     price: 433,
+    ratings: 1.9,
   },
   {
     img: [
@@ -455,11 +522,17 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-546923400311446203/original/b285d6e9-7f33-4c4e-8b84-2dae13a9f5d1.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Anthony Bradley",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?im_w=240",
+    },
     location: "Cameroon",
     price: 723,
+    ratings: 3.5,
   },
   {
     img: [
@@ -469,11 +542,17 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-635437605163910390/original/0db5cffd-7f0d-4e13-bd59-39cb9861cdaa.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-635437605163910390/original/5a6ee29b-2c64-440a-aee6-481d4d8d1bd5.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Keith Long",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/82130759-fbba-4012-ac60-51d5b0e4801e.jpg?im_w=240",
+    },
     location: "São Tomé and Príncipe",
     price: 273,
+    ratings: 1.0,
   },
   {
     img: [
@@ -483,11 +562,17 @@ export const rentals = [
       "https://a0.muscache.com/im/pictures/miso/Hosting-31508919/original/15a204ce-3888-48fb-b8a4-ecedbb29587f.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-31508919/original/83a1746c-d67e-415b-857d-86d11dfe72aa.jpeg?im_w=720",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "rooms",
+    host: {
+      name: "Joel Palmer",
+      photo:
+        "https://a0.muscache.com/im/pictures/user/3816a6ef-5cc9-40ed-ae47-406646daa103.jpg?im_w=240",
+    },
     location: "Bangladesh",
     price: 547,
+    ratings: 2.4,
   },
   {
     img: [
@@ -497,11 +582,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Taiwan",
     price: 360,
+    ratings: 2.5,
   },
   {
     img: [
@@ -511,11 +597,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Tajikistan",
     price: 119,
+    ratings: 3.0,
   },
   {
     img: [
@@ -525,11 +612,13 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Luxembourg",
     price: 31,
+
+    ratings: 2.1,
   },
   {
     img: [
@@ -539,11 +628,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Norfolk Island",
     price: 671,
+    ratings: 4.0,
   },
   {
     img: [
@@ -553,11 +643,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "amazing pools",
     location: "Guinea",
     price: 632,
+    ratings: 3.0,
   },
   {
     img: [
@@ -567,11 +658,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "British Virgin Islands",
     price: 384,
+    ratings: 4.9,
   },
   {
     img: [
@@ -581,11 +673,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card13.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "Denmark",
     price: 672,
+    ratings: 1.2,
   },
   {
     img: [
@@ -595,11 +688,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "New Zealand",
     price: 830,
+    ratings: 3.9,
   },
   {
     img: [
@@ -609,11 +703,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "play",
     location: "Turkey",
     price: 363,
+    ratings: 4.7,
   },
   {
     img: [
@@ -623,11 +718,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Belarus",
     price: 229,
+    ratings: 3.1,
   },
   {
     img: [
@@ -637,11 +733,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "French Polynesia",
     price: 977,
+    ratings: 4.5,
   },
   {
     img: [
@@ -651,11 +748,13 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Northern Mariana Islands",
     price: 78,
+
+    ratings: 3.0,
   },
   {
     img: [
@@ -665,11 +764,12 @@ export const rentals = [
       "/assets/card14.webp",
       "/assets/card15.webp",
     ],
-    desc: "Stay with Riley - Artist",
+    desc: "Stay with ",
     date: "Jul 19 -24",
     category: "trending",
     location: "Norfolk Island",
     price: 511,
+    ratings: 1.0,
   },
 ];
 
@@ -749,5 +849,5 @@ export const categories = [
   {
     name: "tropical",
     img: "https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg",
-  }
+  },
 ];

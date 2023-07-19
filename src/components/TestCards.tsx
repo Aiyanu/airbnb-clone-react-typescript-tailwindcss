@@ -1,93 +1,87 @@
-import { ChevronLeft, ChevronRight, Tune } from "@mui/icons-material";
-import React, { useContext, useRef, useState } from "react";
-import { categories } from "../data";
-import { RentalContext } from "../context";
+import React, { useContext, useState } from "react";
 import { rentals } from "../data";
+import { RentalContext } from "../context";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Favorite,
+  FavoriteOutlined,
+  Star,
+} from "@mui/icons-material";
+import ImageSlider from "./ImageSlider";
+// import { Swiper, SwiperSlide } from "swiper/react";
 
-export default function Filter() {
-  const [index, setIndex] = useState(0);
-  const { rentalCategory, changeRentalCategory } = useContext(RentalContext);
+export default function Cards() {
+  const [scrollPositions, setScrollPositions] = useState<number[]>([]);
+  const [liked, setLiked] = useState<boolean[]>([]);
+  const [index, setIndex] = useState();
+  const { rentalCategory } = useContext(RentalContext);
   const newRentals = rentals.filter(
     (rental) => rental.category === rentalCategory
   );
-  const handleClick = (id: number, name: string) => {
-    // console.log(name);
-    window.scrollTo(0, 0);
-    setIndex(id);
-    changeRentalCategory(name);
-  };
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [scrollLeft, setScrollLeft] = useState(0);
 
-  const handleScrollLeft = () => {
-    const container = containerRef.current;
-    if (container) {
-      container.scrollLeft -= 100; // Adjust the scroll amount as needed
-      setScrollLeft(container.scrollLeft);
-    }
+  const handleScroll = (index: number, e: React.UIEvent<HTMLElement>) => {
+    const scrollLeft = e.currentTarget.scrollLeft;
+    setScrollPositions((prevScrollPositions: number[]) => {
+      const updatedScrollPositions = [...prevScrollPositions];
+      updatedScrollPositions[index] = scrollLeft;
+      return updatedScrollPositions;
+    });
   };
 
-  const handleScrollRight = () => {
-    const container = containerRef.current;
-    if (container) {
-      container.scrollLeft += 100; // Adjust the scroll amount as needed
-      setScrollLeft(container.scrollLeft);
-    }
-  };
-
-  const handleScroll = () => {
-    const container = containerRef.current;
-    if (container) {
-      setScrollLeft(container.scrollLeft);
-    }
+  const toggleLiked = (index: number) => {
+    setLiked((prevLiked: boolean[]) => {
+      const updatedLiked = [...prevLiked];
+      updatedLiked[index] = !updatedLiked[index];
+      return updatedLiked;
+    });
   };
 
   return (
-    <div className="flex gap-4 justify-center items-center px-4 pt-2">
-      <div
-        className={`mr-2 ${
-          scrollLeft === 0 ? "hidden" : "block"
-        } max-md:hidden p-1 rounded-full border grid place-items-center cursor-pointer`}
-        onClick={handleScrollLeft}
-      >
-        <ChevronLeft fontSize="small" />
-      </div>
-      <div
-        id="scroll-container"
-        style={{ maxWidth: "100%", scrollBehavior: "smooth" }}
-        ref={containerRef}
-        onScroll={handleScroll}
-        className="flex no-scrollbar overflow-x-auto space-x-4 gap-8 px-8"
-      >
-        {newRentals.map((category, id) => {
-          const { img } = category;
-          const isActive = index === id;
+    <>
+      <h1 className="text-6xl">Test</h1>
+      <div className="container mx-auto grid grid-cols-auto-fit place-items-center overscroll-contain">
+        {newRentals.map((rental, index) => {
+          const { img, location, price, date, desc, ratings, host } = rental;
+          const isLiked = liked[index] || false;
           return (
-            <div
-              key={id}
-              className="relative cursor-pointer group w-4 pb-2"
-            >
-              <div className="flex flex-col gap-4 justify-center items-center">
+            <div key={index} className="mb-8 relative">
+              <ImageSlider images={rental.img} />
+              <div
+                className="absolute right-4 top-4"
+                onClick={() => toggleLiked(index)}
+              >
+                {!isLiked ? (
+                  <FavoriteOutlined color="action" />
+                ) : (
+                  <Favorite color="error" />
+                )}
+              </div>
+
+              <div className="text-left flex-1 flex flex-col relative">
+                <div className="w-full flex justify-between">
+                  <h1 className="font-bold text-base inline">{location}</h1>
+                  <span className="flex items-center">
+                    <Star fontSize="small" />
+                    {ratings}
+                  </span>
+                </div>
+                <span className="text-gray-500">{date}</span>
+                <span className="text-gray-500">{desc}</span>
+                <span className="font-bold">${price} night</span>
+              </div>
+              {host && <button className=" absolute top-48 left-4 w-16 h-20 bg-slate-200 shadow-2xl grid place-items-center rounded-l-sm rounded-r-xl ">
+                <div className="w-96 h-full absolute z-10 bg-blue left-2" />
                 <img
-                  src={img[0]}
-                  className={`w-6 ${isActive ? "" : "filter grayscale"}`}
+                  className="rounded-full object-cover aspect-square w-12 shadow-lg border-l-2"
+                  src={host?.photo}
                   alt=""
                 />
-              </div>
+              </button>}
             </div>
           );
         })}
       </div>
-      <div
-              className={`p-1 rounded-full ml-4 max-md:hidden full border grid place-items-center cursor-pointer`}
-        onClick={handleScrollRight}
-      >
-        <ChevronRight fontSize="small" />
-      </div>
-      <div className="border p-4 flex rounded-2xl max-md:hidden cursor-pointer">
-        <Tune />
-        <span className="capitalize">filters</span>
-      </div>
-    </div>
+    </>
   );
 }

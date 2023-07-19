@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { rentals } from "../data";
 import { RentalContext } from "../context";
 import {
@@ -6,16 +6,21 @@ import {
   ChevronRight,
   Favorite,
   FavoriteOutlined,
+  Star,
 } from "@mui/icons-material";
+import ImageSlider from "./ImageSlider";
 // import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Cards() {
-  const [scrollPositions, setScrollPositions] = useState<number[]>([]);
-  const [liked, setLiked] = useState<boolean[]>([]);
   const { rentalCategory } = useContext(RentalContext);
   const newRentals = rentals.filter(
     (rental) => rental.category === rentalCategory
   );
+
+  const [scrollPositions, setScrollPositions] = useState<number[]>([]);
+  const [liked, setLiked] = useState<boolean[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [filterCount, setFilterCount] = useState(0); // Add filterCount state
 
   const handleScroll = (index: number, e: React.UIEvent<HTMLElement>) => {
     const scrollLeft = e.currentTarget.scrollLeft;
@@ -34,29 +39,30 @@ export default function Cards() {
     });
   };
 
+  useEffect(() => {
+    // Reset currentIndex when filterCount changes
+    setCurrentIndex(0);
+  }, [filterCount]);
+
+  const handleFilterChange = () => {
+    // Increment the filterCount to trigger state refresh
+    setFilterCount((prevCount) => prevCount + 1);
+  };
+
   return (
-    <div className="grid grid-cols-auto-fit place-items-center overscroll-contain">
-      {newRentals.map((rental, index) => {
-        const { img, location, price, date, desc } = rental;
-        const isLiked = liked[index] || false;
-        return (
-          <div className="flex flex-col group cursor-pointer" key={index}>
-            <div className="max-w-full flex-4 relative">
+    <>
+      <div className="container mx-auto grid grid-cols-auto-fit place-items-center overscroll-contain overflow-x-hidden">
+        {newRentals.map((rental, index) => {
+          const { img, location, price, date, desc, ratings, host } = rental;
+          const isLiked = liked[index] || false;
+          return (
+            <div key={index} className="mb-8 relative">
+              <ImageSlider
+                key={filterCount} // Add key prop for refreshing state
+                images={rental.img}
+              />
               <div
-                className="no-scrollbar overflow-x-scroll flex snap-mandatory snap-x w-72 relative"
-                onScroll={(e) => handleScroll(index, e)}
-              >
-                {img.map((img, i) => (
-                  <img
-                    className="snap-center rounded-2xl aspect-square object-cover"
-                    src={img}
-                    alt=""
-                    key={i}
-                  />
-                ))}
-              </div>
-              <div
-                className="absolute right-4 top-4 "
+                className="absolute right-4 top-4"
                 onClick={() => toggleLiked(index)}
               >
                 {!isLiked ? (
@@ -65,34 +71,33 @@ export default function Cards() {
                   <Favorite color="error" />
                 )}
               </div>
-            </div>
-            <div className="text-left flex-1 flex flex-col relative">
-              <div className="absolute left-2 rounded-full hidden group-hover:lg:inline bg-gray-200 bg-opacity-70 hover:bg-white -top-40">
-                <ChevronLeft />
+
+              <div className="text-left flex-1 flex flex-col relative">
+                <div className="w-full flex justify-between">
+                  <h1 className="font-bold text-base inline">{location}</h1>
+                  <span className="flex items-center">
+                    <Star fontSize="small" />
+                    {ratings}
+                  </span>
+                </div>
+                <span className="text-gray-500">{date}</span>
+                <span className="text-gray-500">{desc}</span>
+                <span className="font-bold">${price} night</span>
               </div>
-              <div className="absolute right-2  rounded-full hidden group-hover:lg:inline bg-gray-200 bg-opacity-70 hover:bg-white -top-40">
-                <ChevronRight />
-              </div>
-              <div className="flex justify-center absolute gap-2 -top-8 left-0 right-0">
-                {[...Array(img.length)].slice(0, 5).map((_, i) => (
-                  <div
-                    className={`rounded-full bg-gray-200 h-1.5 w-1.5 ${
-                      scrollPositions[index] >= i * 100
-                        ? "bg-white"
-                        : "bg-gray-300 bg-opacity-90"
-                    }`}
-                    key={i}
+              {host && (
+                <button className=" absolute top-48 left-4 w-16 h-20 bg-slate-200 shadow-2xl grid place-items-center rounded-l-sm rounded-r-xl ">
+                  <div className="w-96 h-full absolute z-10 bg-blue left-2" />
+                  <img
+                    className="rounded-full object-cover aspect-square w-12 shadow-lg border-l-2"
+                    src={host?.photo}
+                    alt=""
                   />
-                ))}
-              </div>
-              <h1 className="font-bold text-base">{location}</h1>
-              <span className="text-gray-500">{date}</span>
-              <span className="text-gray-500">{desc}</span>
-              <span className="font-bold">${price} night</span>
+                </button>
+              )}
             </div>
-          </div>
-        );
-      })}
-    </div>
+          );
+        })}
+      </div>
+    </>
   );
 }
