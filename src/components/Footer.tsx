@@ -5,7 +5,7 @@ import FooterModal from "./FooterModal";
 export default function Footer() {
   return (
     <footer className="flex justify-between px-8 bg-white border-t text-sm fixed left-0 right-0 z-10 bottom-0 py-2">
-      <div className="flex flex-nowrap gap-2">
+      <div className="flex flex-wrap gap-2">
         <span className="hover:underline cursor-pointer">© 2023 Airbnb, Inc. </span>·<span className="hover:underline cursor-pointer"> Terms </span>·
         <span className="hover:underline cursor-pointer"> Sitemap </span>·<span className="hover:underline cursor-pointer"> Privacy </span>·
         <span className="flex flex-nowrap items-center gap-2 hover:underline cursor-pointer">
@@ -42,7 +42,7 @@ export default function Footer() {
         </span>
         ·<span className="hover:underline cursor-pointer"> Destinations </span>
       </div>
-      <div className="flex gap-2">
+      <div className="flex gap-2 flex-shrink">
         <span className="hover:underline cursor-pointer"><Language />{ } English(US)</span>
         <span className="hover:underline cursor-pointer">$ USD</span>
         <span className="hover:underline cursor-pointer">Support & resources <ExpandLess fontSize="small"/></span>
