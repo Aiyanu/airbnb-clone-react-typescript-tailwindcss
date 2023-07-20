@@ -50,7 +50,6 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
     }
   };
 
-  const visibleImages = images.slice(0, 5);
 
   return (
     <div className="relative">
@@ -58,7 +57,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ images }) => {
         ref={sliderRef}
         className="no-scrollbar overflow-x-scroll flex snap-mandatory snap-x w-72 relative"
       >
-        {visibleImages.map((image, index) => (
+        {images.map((image, index) => (
           <div key={index} className="w-full flex-shrink-0 snap-start">
             <img
               src={image}

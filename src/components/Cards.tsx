@@ -1,35 +1,14 @@
 import React, { useContext, useEffect, useState } from "react";
 import { rentals } from "../data";
 import { RentalContext } from "../context";
-import {
-  ChevronLeft,
-  ChevronRight,
-  Favorite,
-  FavoriteOutlined,
-  Star,
-} from "@mui/icons-material";
+import { Favorite, FavoriteOutlined, Star } from "@mui/icons-material";
 import ImageSlider from "./ImageSlider";
-// import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Cards() {
   const { rentalCategory } = useContext(RentalContext);
-  const newRentals = rentals.filter(
-    (rental) => rental.category === rentalCategory
-  );
-
-  const [scrollPositions, setScrollPositions] = useState<number[]>([]);
   const [liked, setLiked] = useState<boolean[]>([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
   const [filterCount, setFilterCount] = useState(0); // Add filterCount state
-
-  const handleScroll = (index: number, e: React.UIEvent<HTMLElement>) => {
-    const scrollLeft = e.currentTarget.scrollLeft;
-    setScrollPositions((prevScrollPositions: number[]) => {
-      const updatedScrollPositions = [...prevScrollPositions];
-      updatedScrollPositions[index] = scrollLeft;
-      return updatedScrollPositions;
-    });
-  };
+  const [key, setKey] = useState(0); // Add key state for ImageSlider
 
   const toggleLiked = (index: number) => {
     setLiked((prevLiked: boolean[]) => {
@@ -40,25 +19,32 @@ export default function Cards() {
   };
 
   useEffect(() => {
-    // Reset currentIndex when filterCount changes
-    setCurrentIndex(0);
-  }, [filterCount]);
+    // Reset the key whenever the filter changes
+    setKey((prevKey) => prevKey + 1);
+  }, [rentalCategory]);
 
-  const handleFilterChange = () => {
-    // Increment the filterCount to trigger state refresh
-    setFilterCount((prevCount) => prevCount + 1);
-  };
+  useEffect(() => {
+    // Reset the state of the Cards component whenever the filter changes
+    setLiked([]);
+    setFilterCount(0);
+  }, [rentalCategory]);
 
   return (
     <>
       <div className="container mx-auto grid grid-cols-auto-fit place-items-center overscroll-contain overflow-x-hidden">
-        {newRentals.map((rental, index) => {
-          const { img, location, price, date, desc, ratings, host } = rental;
+        {rentals.map((rental, index) => {
+          const { img, location, price, date, desc, ratings, host, category } =
+            rental;
           const isLiked = liked[index] || false;
           return (
-            <div key={index} className="mb-8 relative">
+            <div
+              key={index}
+              className={`${
+                category !== rentalCategory ? "hidden" : ""
+              } mb-8 relative `}
+            >
               <ImageSlider
-                key={filterCount} // Add key prop for refreshing state
+                key={key} // Add key prop for refreshing state
                 images={rental.img}
               />
               <div
